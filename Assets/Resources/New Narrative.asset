@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fff97fe81401de47869e221a68c9261, type: 3}
+  m_Name: New Narrative
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGuid: 24d559d8-b7c1-42a9-806b-d4a2ce9edff8
+    PortName: Next
+    TargetNodeGuid: 25362464-db2d-49f5-aedc-b6c1dc625b0d
+  - BaseNodeGuid: 25362464-db2d-49f5-aedc-b6c1dc625b0d
+    PortName: Bonjour
+    TargetNodeGuid: 2cba3d3c-cc69-4673-84e1-d75e9b3730fe
+  - BaseNodeGuid: 25362464-db2d-49f5-aedc-b6c1dc625b0d
+    PortName: Salutation
+    TargetNodeGuid: 2cba3d3c-cc69-4673-84e1-d75e9b3730fe
+  - BaseNodeGuid: 2cba3d3c-cc69-4673-84e1-d75e9b3730fe
+    PortName: Bien et vous ?
+    TargetNodeGuid: b312fba6-c06a-47c6-a385-47ef29254b23
+  - BaseNodeGuid: 2cba3d3c-cc69-4673-84e1-d75e9b3730fe
+    PortName: Mal, je suis mourant.
+    TargetNodeGuid: f07e1619-5237-4923-b5a6-fa7f4d6ac544
+  DialogueNodeData:
+  - nodeGUID: 25362464-db2d-49f5-aedc-b6c1dc625b0d
+    dialogueText: Bonjour !
+    position: {x: 265, y: 200}
+  - nodeGUID: b312fba6-c06a-47c6-a385-47ef29254b23
+    dialogueText: "Tr\xE8s bien merci."
+    position: {x: 809, y: 161}
+  - nodeGUID: 2cba3d3c-cc69-4673-84e1-d75e9b3730fe
+    dialogueText: Comment allez-vous ?
+    position: {x: 503, y: 210}
+  - nodeGUID: f07e1619-5237-4923-b5a6-fa7f4d6ac544
+    dialogueText: En vrai, je m'en fiche.
+    position: {x: 809, y: 283}
+  ExposedProperties: []
